@@ -1,0 +1,35 @@
+body,ul,li,p{ margin: 0; padding: 0; }
+
+div.chessboard{ border: 2px solid #000; margin: 10px; position: relative; display: none;}
+
+div.cell{ width: 47px; height: 47px; background: red; position: absolute; transition: 0.5s;}
+
+div.head{ width: 100%; height: 15px; background: blue; }
+
+.panestyle{ width: 45px; height: 45px; border: 1px solid #E6E6E6; float: left; }
+
+div.multiply{ width: 470px; margin: 10px; text-align: center; }
+
+input.number{ width: 25px; height: 25px; font-size: 20px; text-align: center;}
+
+div.multiply>input[type="button"]{ margin-left: 20px; }
+
+div.btn{ width: 336px; text-align: center; position: absolute; top: 40px; right: 100px; }
+
+div.btn>input[type="button"]{ margin-left: 20px; }
+
+div.console{ position: absolute; top: 80px; right: 100px; }
+
+div.console>ul{ list-style: none; width: 25px; padding: 2px; border: 1px solid transparent;
+	            float: left; background: #DBDBDB; margin-right: -1px; overflow: hidden;}
+
+div.console>ul,#panel{ height: 200px; }
+
+li.serial{ width: 25px; height: 25px; text-align: center; font-size: 25px; line-height: 25px; color:#FFF; border-radius: 50%;}
+
+#panel{ width: 300px; background: #1F1B1B; color: #2B8634; font-size: 25px; line-height: 25px; 
+	    float: left;}
+
+div.explain{ width: 460px; border: 1px solid #000; padding: 5px; position: absolute; top: 300px; right: 20px;}
+
+div.explain>p{ line-height: 25px; }

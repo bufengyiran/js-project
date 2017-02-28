@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>听指令的小方块</title>
+	<link rel="stylesheet" href="chess.css">
+	<script src="move.js"></script>
+</head>
+<body>
+	<div class="chessboard">
+		<div class="cell">
+			<div class="head"></div>
+		</div>
+	</div>
+	<div class="multiply">
+		<input type="text" class="number">
+		<span>X</span>
+		<input type="text" class="number">
+		<input type="button" value="Enter">
+		<span>(输入数字：例如 10 x 10)</span>
+	</div>
+	<div class="btn">
+		<input type="button" value="执行"><input type="button" value="Refresh">
+	</div>
+	<div class="console">
+		<ul>
+			<li class="serial">1</li>
+		</ul>
+		<textarea name="" id="panel"></textarea>
+	</div>
+	<div class="explain">
+		<p>在输入框中允许输入如下指令，按下执行按钮后，使得正方形做相应动作移动，但不能超出棋盘空间</p>
+		<p>g：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</p>
+		<p>l：向左转（逆时针旋转90度）</p>
+		<p>r：向右转（顺时针旋转90度）</p>
+		<p>b：向后转（旋转180度）</p>
+		<p>tl：向屏幕的左侧移动一格，方向不变</p>
+		<p>tt：向屏幕的上面移动一格，方向不变</p>
+		<p>tr：向屏幕的右侧移动一格，方向不变</p>
+		<p>tb：向屏幕的下面移动一格，方向不变</p>
+		<p>ml：方向转向屏幕左侧，并向屏幕的左侧移动一格</p>
+		<p>mt：方向转向屏幕上面，并向屏幕的上面移动一格</p>
+		<p>mr：方向转向屏幕右侧，并向屏幕的右侧移动一格</p>
+		<p>mb：方向转向屏幕下面，并向屏幕的下面移动一格</p>
+		<p>g 3：向当前方向前进三格</p>
+		<p>tt 2：向屏幕上方平移两格</p>
+		<p>mr 4：方向转向屏幕右侧，向屏幕的右侧移动四格</p>
+	</div>
+</body>
+</html>
